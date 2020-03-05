@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF91614E-E5B0-40E4-BEF1-D1F25F5CD96C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMSCRatesManagement</RootNamespace>
+    <AssemblyName>BMSCRatesManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharePointConnector.cs" />
+    <Compile Include="SharePointConnectorReport.cs" />
+    <Compile Include="SupportClasses.cs" />
+    <Compile Include="WPAgreementsFormRequest\WPAgreementsFormRequest.cs" />
+    <Compile Include="WPAgreementsFormRequest\WPAgreementsFormRequestUserControl.ascx.cs">
+      <DependentUpon>WPAgreementsFormRequestUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPAgreementsFormRequest\WPAgreementsFormRequestUserControl.ascx.designer.cs">
+      <DependentUpon>WPAgreementsFormRequestUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPAsfiRatesReport\WPAsfiRatesReport.cs" />
+    <Compile Include="WPAsfiRatesReport\WPAsfiRatesReportUserControl.ascx.cs">
+      <DependentUpon>WPAsfiRatesReportUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPAsfiRatesReport\WPAsfiRatesReportUserControl.ascx.designer.cs">
+      <DependentUpon>WPAsfiRatesReportUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPCampaignsFormRequest\WPCampaignsFormRequest.cs" />
+    <Compile Include="WPCampaignsFormRequest\WPCampaignsFormRequestUserControl.ascx.cs">
+      <DependentUpon>WPCampaignsFormRequestUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPCampaignsFormRequest\WPCampaignsFormRequestUserControl.ascx.designer.cs">
+      <DependentUpon>WPCampaignsFormRequestUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPMaxRatesReport\WPMaxRatesReport.cs" />
+    <Compile Include="WPMaxRatesReport\WPMaxRatesReportUserControl.ascx.cs">
+      <DependentUpon>WPMaxRatesReportUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPMaxRatesReport\WPMaxRatesReportUserControl.ascx.designer.cs">
+      <DependentUpon>WPMaxRatesReportUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPRatesFormRequest\WPRatesFormRequest.cs" />
+    <Compile Include="WPRatesFormRequest\WPRatesFormRequestUserControl.ascx.cs">
+      <DependentUpon>WPRatesFormRequestUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPRatesFormRequest\WPRatesFormRequestUserControl.ascx.designer.cs">
+      <DependentUpon>WPRatesFormRequestUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{74f6fa86-ee8c-4e35-a563-42b7167e6339}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{4c7beed8-f5c8-46e6-83fc-8527a304fd8a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WPAgreementsFormRequest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ee2f256-3516-4865-8bdf-18ee505086a3}</SharePointProjectItemId>
+    </None>
+    <None Include="WPAgreementsFormRequest\WPAgreementsFormRequest.webpart" />
+    <None Include="WPAsfiRatesReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc09848d-8eae-4a9a-9c6f-084328e75e33}</SharePointProjectItemId>
+    </None>
+    <None Include="WPAsfiRatesReport\WPAsfiRatesReport.webpart" />
+    <None Include="WPCampaignsFormRequest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{535a4255-ec70-4c93-a1e6-edbbc5fa7993}</SharePointProjectItemId>
+    </None>
+    <None Include="WPCampaignsFormRequest\WPCampaignsFormRequest.webpart" />
+    <None Include="WPMaxRatesReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cd465510-bd66-47dc-ab80-835dfeca1356}</SharePointProjectItemId>
+    </None>
+    <None Include="WPMaxRatesReport\WPMaxRatesReport.webpart" />
+    <None Include="WPRatesFormRequest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f02cd6cf-041f-413c-8166-e4753aeb3b9d}</SharePointProjectItemId>
+    </None>
+    <None Include="WPRatesFormRequest\WPRatesFormRequest.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="WPAgreementsFormRequest\Elements.xml" />
+    <Content Include="WPAgreementsFormRequest\WPAgreementsFormRequestUserControl.ascx" />
+    <Content Include="WPAsfiRatesReport\Elements.xml" />
+    <Content Include="WPAsfiRatesReport\WPAsfiRatesReportUserControl.ascx" />
+    <Content Include="WPCampaignsFormRequest\Elements.xml" />
+    <Content Include="WPCampaignsFormRequest\WPCampaignsFormRequestUserControl.ascx" />
+    <Content Include="WPMaxRatesReport\Elements.xml" />
+    <Content Include="WPMaxRatesReport\WPMaxRatesReportUserControl.ascx" />
+    <Content Include="WPRatesFormRequest\Elements.xml" />
+    <Content Include="WPRatesFormRequest\WPRatesFormRequestUserControl.ascx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

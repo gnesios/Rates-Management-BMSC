@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BMSCRatesManagement.WPCampaignsFormRequest.WPCampaignsFormRequest, BMSCRatesManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b0abbb10184e3e" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Tasas BMSC - Formulario Campañas</property>
+        <property name="Description" type="string">Formulario de búsqueda y solicitud de Campañas.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

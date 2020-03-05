@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4c7beed8-f5c8-46e6-83fc-8527a304fd8a" solutionId="4c7beed8-f5c8-46e6-83fc-8527a304fd8a" resetWebServer="false" sharePointProductVersion="15.0" name="BMSCRatesManagement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="74f6fa86-ee8c-4e35-a563-42b7167e6339" />
+  </features>
+</package>

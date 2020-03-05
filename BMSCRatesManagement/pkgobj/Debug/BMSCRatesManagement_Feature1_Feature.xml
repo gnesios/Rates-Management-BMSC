@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Característica que permite la administración de 'tasas de crédito' por 'segmento de mercado'." Id="01e7929a-0508-439d-afe3-6a057674b6b5" Scope="Site" Title="BMSC Administración de Tasas">
+  <ElementManifests>
+    <ElementManifest Location="WPAgreementsFormRequest\Elements.xml" />
+    <ElementFile Location="WPAgreementsFormRequest\WPAgreementsFormRequest.webpart" />
+    <ElementManifest Location="WPCampaignsFormRequest\Elements.xml" />
+    <ElementFile Location="WPCampaignsFormRequest\WPCampaignsFormRequest.webpart" />
+    <ElementManifest Location="WPRatesFormRequest\Elements.xml" />
+    <ElementFile Location="WPRatesFormRequest\WPRatesFormRequest.webpart" />
+    <ElementManifest Location="WPMaxRatesReport\Elements.xml" />
+    <ElementFile Location="WPMaxRatesReport\WPMaxRatesReport.webpart" />
+    <ElementManifest Location="WPAsfiRatesReport\Elements.xml" />
+    <ElementFile Location="WPAsfiRatesReport\WPAsfiRatesReport.webpart" />
+  </ElementManifests>
+</Feature>

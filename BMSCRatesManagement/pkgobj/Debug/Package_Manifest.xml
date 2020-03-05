@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="4c7beed8-f5c8-46e6-83fc-8527a304fd8a" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="BMSCRatesManagement.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="BMSCRatesManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b0abbb10184e3e" Namespace="BMSCRatesManagement.WPAgreementsFormRequest" TypeName="*" />
+        <SafeControl Assembly="BMSCRatesManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b0abbb10184e3e" Namespace="BMSCRatesManagement.WPCampaignsFormRequest" TypeName="*" />
+        <SafeControl Assembly="BMSCRatesManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b0abbb10184e3e" Namespace="BMSCRatesManagement.WPRatesFormRequest" TypeName="*" />
+        <SafeControl Assembly="BMSCRatesManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b0abbb10184e3e" Namespace="BMSCRatesManagement.WPMaxRatesReport" TypeName="*" />
+        <SafeControl Assembly="BMSCRatesManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b0abbb10184e3e" Namespace="BMSCRatesManagement.WPAsfiRatesReport" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\BMSCRatesManagement\WPAgreementsFormRequest\WPAgreementsFormRequestUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BMSCRatesManagement\WPCampaignsFormRequest\WPCampaignsFormRequestUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BMSCRatesManagement\WPRatesFormRequest\WPRatesFormRequestUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BMSCRatesManagement\WPMaxRatesReport\WPMaxRatesReportUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BMSCRatesManagement\WPAsfiRatesReport\WPAsfiRatesReportUserControl.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BMSCRatesManagement_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
